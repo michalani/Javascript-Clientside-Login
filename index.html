@@ -5,10 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="apple-mobile-web-app-title" content="DOLLARS">
 
-<title>Secret DOLLARS Club</title>
+<title>DOLLAR Shave Club</title>
 
 <link rel="stylesheet" href="//drrr.com/css/app.css?v=20191028.22.13">
-
+<script>
+function validateForm() {
+  var logmeIn = document.forms["myForm"]["password"].value;
+  if (logmeIn == "{Perry_very_berry}") {
+    return true;
+  }
+  else{
+  alert("Password Invalid! Try again!");
+  return false;
+  }
+}
+</script>
 </head>
 
 <body>
@@ -26,17 +37,15 @@
     <div class="login-form field" id="t_form">
     	<div class="home-name">
     		<label for="form-name">Username:</label>
-    		<input type="text" id="form-name" name="name" size="10" maxlength="40" class="home-name-input" required autocomplete="on">
+    		<input type="text" id="form-name" name="name" size="10" maxlength="40" class="home-name-input" required autocomplete="off">
+        <label for="form-name">Password:</label>
+    		<input type="password" id="form-name" name="pass" size="10" maxlength="40" class="home-name-input" required autocomplete="off">
       </div>
       <p class="text-center">
-        <a href="#home-extra" class="needsclick" id="home-extra-toggle">Settings</a>
-        - <a href="faq/" class="needsclick">FAQ</a>
-        - <a href="https://drrr.chat/d/255" class="needsclick">Chat Rules</a>
+        Registered members only!
       </p>
     	<div class="home-submit">
     		<input type="submit" name="login" value="ENTER" class="submit-input home-submit-input">
-
-
   
 </body>
 </html>
