@@ -10,9 +10,10 @@
 <link rel="stylesheet" href="//drrr.com/css/app.css?v=20191028.22.13">
 <script>
 function validateForm() {
-  var logmeIn = document.forms["submit"]["password"].value;
+  var logmeIn = document.forms["submit"]["pass"].value;
   if (logmeIn == "{Perry_very_berry}") {
-    return true;
+ 
+    window.location.replace("https://www.cybersoc.cf");
   }
   else{
   alert("Password Invalid! Try again!");
@@ -33,7 +34,7 @@ function validateForm() {
     <div class="login-logo back"></div>
   </div>
 
-    <form action="/login.php" method="post" onsubmit="return validateForm()" >
+    <form action="/" method="post" onsubmit="return validateForm()" >
     <div class="login-form field" id="t_form">
     	<div class="home-name">
         
@@ -41,12 +42,12 @@ function validateForm() {
         Registered members only!
       </p>
     		<label for="form-name">Username:</label>
-    		<input type="text" id="form-name" name="name" size="10" maxlength="40" class="home-name-input" required autocomplete="off"><br>
+    		<input type="text" id="form-name" name="name" size="10" maxlength="40" class="home-name-input" ronsubmit="return validateForm()" equired autocomplete="off"><br>
         <label for="form-name">Password:</label>
-    		<input type="password" id="form-name" name="pass" size="10" maxlength="40" class="home-name-input" required autocomplete="off">
+    		<input type="password" id="form-name" name="pass" size="10" maxlength="40" class="home-name-input" onsubmit="return validateForm()" required autocomplete="off">
       </div>
       <div class="home-submit">
-    		<input type="submit" name="login" value="ENTER" class="submit-input home-submit-input">
+    		<input type="submit" name="login" value="ENTER" onsubmit="return validateForm()"  class="submit-input home-submit-input">
       </div>
       
 </body>
