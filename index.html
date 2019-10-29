@@ -45,7 +45,9 @@ function validateForm() {
         <label for="form-name">Password:</label>
     		<input type="password" id="form-name" name="pass" size="10" maxlength="40" class="home-name-input" required autocomplete="off">
       </div>
-    	<div class="home-submit">
-        <form name="myForm" action="/login.php" onsubmit="return validateForm()" method="post" class="submit-input home-submit-input" value="Submit">  
+      <div class="home-submit">
+    		<input type="submit" action="/login.php" name="login" onsubmit="return validateForm()" method="post"value="ENTER" class="submit-input home-submit-input">
+      </div>
+      
 </body>
 </html>
