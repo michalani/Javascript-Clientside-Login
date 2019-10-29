@@ -1,1 +1,25 @@
-a
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var logmeIn = document.forms["myForm"]["password"].value;
+  if (logmeIn == "{Perry_very_berry}") {
+    return true;
+  }
+  else{
+  alert("Password Invalid! Try again!");
+  return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/login.php" onsubmit="return validateForm()" method="post">
+  Password: <input type="text" name="password">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
