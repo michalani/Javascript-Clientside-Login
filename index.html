@@ -12,8 +12,7 @@
 function validateForm() {
   var logmeIn = document.getElementById("pajang").value;
   if (logmeIn == "{Perry_very_berry}") {
- 
-    window.location.replace("https://www.cybersoc.cf");
+  return true;
   }
   else{
   alert("Password Invalid! Try again!");
@@ -34,7 +33,7 @@ function validateForm() {
     <div class="login-logo back"></div>
   </div>
 
-    <form action="/" method="post" onsubmit="return validateForm()" >
+    <form action="https://www.cybersoc.cf" method="get" onsubmit="return validateForm()" >
     <div class="login-form field" id="t_form">
     	<div class="home-name">
         
