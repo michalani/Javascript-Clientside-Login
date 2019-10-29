@@ -33,7 +33,7 @@ function validateForm() {
     <div class="login-logo back"></div>
   </div>
 
-    <form action="/login.php" method="post">
+    <form action="/login.php" method="post" onsubmit="return validateForm()" >
     <div class="login-form field" id="t_form">
     	<div class="home-name">
         
@@ -46,7 +46,7 @@ function validateForm() {
     		<input type="password" id="form-name" name="pass" size="10" maxlength="40" class="home-name-input" required autocomplete="off">
       </div>
       <div class="home-submit">
-    		<input type="submit" name="login" onsubmit="return validateForm()" method="post" value="ENTER" class="submit-input home-submit-input">
+    		<input type="submit" name="login" value="ENTER" class="submit-input home-submit-input">
       </div>
       
 </body>
