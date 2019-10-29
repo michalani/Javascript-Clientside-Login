@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="//drrr.com/css/app.css?v=20191028.22.13">
 <script>
 function validateForm() {
-  var logmeIn = document.getElementByClass("pajang").value;
+  var logmeIn = document.getElementById("pajang").value;
   if (logmeIn == "{Perry_very_berry}") {
  
     window.location.replace("https://www.cybersoc.cf");
@@ -44,7 +44,7 @@ function validateForm() {
     		<label for="form-name">Username:</label>
     		<input type="text" id="form-name" name="name" size="10" maxlength="40" class="home-name-input" ronsubmit="return validateForm()" equired autocomplete="off"><br>
         <label for="form-name">Password:</label>
-    		<input type="password" id="form-name" name="pass" size="10" maxlength="40" class="pajang" onsubmit="return validateForm()" required autocomplete="off">
+    		<input type="password" id="pajang" name="pass" size="10" maxlength="40" class="home-name-input" onsubmit="return validateForm()" required autocomplete="off">
       </div>
       <div class="home-submit">
     		<input type="submit" name="login" value="ENTER" class="submit-input home-submit-input">
