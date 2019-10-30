@@ -10,8 +10,9 @@
 <link rel="stylesheet" href="/drrr.css">
 <script>
 function validateForm() {
-  var logmeIn = document.getElementById("pajang").value;
-  if (logmeIn == "V3rys3curepa55w0rd!") {
+  var uname = document.getElementById("uname").value;
+  var pword = document.getElementById("pajang").value;
+  if (uname == "ilovecybersoc" && pword == "V3rys3curepa55w0rd!") {
   return true;
   }
   else{
@@ -41,7 +42,7 @@ function validateForm() {
         Registered members only!
       </p>
     		<label for="form-name">Username:</label>
-    		<input type="text" id="form-name" name="name" size="10" maxlength="40" class="home-name-input" ronsubmit="return validateForm()" required autocomplete="off"><br>
+    		<input type="text" id="uname" name="name" size="10" maxlength="40" class="home-name-input" ronsubmit="return validateForm()" required autocomplete="off"><br>
         <label for="form-name">Password:</label>
     		<input type="password" id="pajang" name="pass" size="10" maxlength="40" class="home-name-input" onsubmit="return validateForm()" required autocomplete="off">
       </div>
